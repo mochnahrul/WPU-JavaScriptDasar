@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Dasar - Refactoring</title>
+  </head>
+  <body>
+    <script>
+      // Refactoring adalah sebuah proses mengubah kode agar menjadi lebih baik, tanpa mengubah fungsionalitasnya
+
+      // Sebelum refactoring
+      // function jumlahVolumeKubus(a, b) {
+      //   var volumeA, volumeB, total;
+      //   volumeA = a * a * a;
+      //   volumeB = b * b * b;
+      //   total = volumeA + volumeB;
+
+      //   return total;
+      // };
+
+      // console.log(jumlahVolumeKubus(5, 5));
+
+      // Sesudah refactoring
+      function jumlahVolumeKubus(a, b) {
+        return Math.pow(a, 3) + Math.pow(b, 3);
+      }
+
+      console.log(jumlahVolumeKubus(5, 5));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Dasar - Switch</title>
+  </head>
+  <body>
+    <script>
+      alert("Kalkulator Sederhana");
+
+      var angka1 = prompt("Masukan angka pertama"),
+        angka2 = prompt("Masukan angka kedua"),
+        operator = prompt("Masukan operator"),
+        hasil;
+
+      switch (operator) {
+        case "+":
+          hasil = Number(angka1) + Number(angka2);
+          break;
+        case "-":
+          hasil = Number(angka1) - Number(angka2);
+          break;
+        case "*":
+          hasil = Number(angka1) * Number(angka2);
+          break;
+        case "/":
+          hasil = Number(angka1) / Number(angka2);
+          break;
+        case "%":
+          hasil = Number(angka1) % Number(angka2);
+          break;
+        default:
+          hasil = "Yang kamu masukan tidak sesuai";
+          break;
+      }
+
+      alert(hasil);
+    </script>
+  </body>
+</html>

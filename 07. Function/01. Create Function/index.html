@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Dasar - Membuat Function</title>
+  </head>
+  <body>
+    <script>
+      function jumlahVolumeKubus(a, b) {
+        var volumeA, volumeB, total;
+        var volumeA = Math.pow(a, 3);
+        var volumeB = Math.pow(b, 3);
+        total = volumeA + volumeB;
+
+        return total;
+      }
+
+      console.log(jumlahVolumeKubus(8, 3));
+      console.log(jumlahVolumeKubus(5, 5));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Dasar - Rekursif</title>
+  </head>
+  <body>
+    <script>
+      // Rekursif adalah sebuah fungsi yang memanggil dirinya sendiri
+
+      // function rekursif(n) {
+      //   if (n > 10) {
+      //     return;
+      //   }
+
+      //   console.log(n);
+      //   rekursif(n+1);
+      // };
+
+      // rekursif(1);
+
+      // Latihan
+      function faktorial(n) {
+        if (n === 0) {
+          return 1;
+        }
+
+        return n * faktorial(n - 1);
+      }
+
+      console.log(faktorial(5));
+    </script>
+  </body>
+</html>
